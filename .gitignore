@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Datos en GB
+datos/
+3_data_preparation/dataset_final.csv
+6_deployment/dashboard.*
+Enunciado.pdf
