@@ -1,6 +1,6 @@
---CREATE DATABASE DWBTS;
+CREATE DATABASE DWBTS;
 
---USE DWBTS;
+USE DWBTS;
 
 CREATE TABLE dim_airline (
     airline_id INT IDENTITY(1,1) PRIMARY KEY,
@@ -44,7 +44,7 @@ CREATE TABLE fact_flights (
     categoria_de_retraso VARCHAR(20) NULL,
     semana INT NULL,
     trimestre INT NULL,
-    dia_festivo VARCHAR(50) NULL;
+    dia_festivo INT NULL;
     -- llaves foraneas
     CONSTRAINT FK_fact_airline FOREIGN KEY (airline_id) REFERENCES dim_airline(airline_id),
     CONSTRAINT FK_fact_origin_airport FOREIGN KEY (origin_airport_id) REFERENCES dim_airport(airport_id),

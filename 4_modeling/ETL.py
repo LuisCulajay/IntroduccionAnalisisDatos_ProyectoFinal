@@ -25,7 +25,7 @@ conn = pyodbc.connect(connection_string)
 cursor = conn.cursor()
 
 # ============================================================
-# === CARGAR DIMENSION AEROLÍNEAS (ya es pequeño, se queda igual)
+# === CARGAR DIMENSION AEROLÍNEAS
 # ============================================================
 
 def cargar_dim_airline():
